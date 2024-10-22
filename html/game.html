@@ -1,23 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
+  <meta charset="utf-8">
+  <title>Balls</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <div class = "game-board">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
-    <script src="/js/script.js"></script>
+
+<body onkeyup="handleKey(event)" onload="initGame()">
+  <h1>Collect The Balls</h1>
+  <h2>Balls caught: <span id="ball-count">0</span></h2>
+  <h3 id="victory-message" style="display:none;">Victory! You've caught all the balls!</h3>
+  <button onclick="restartGame()">Restart</button>
+  <table>
+    <tbody class="board"></tbody>
+  </table>
+  <script src="../js/app.js"></script>
+  <script src="../js/script.js"></script>
 </body>
+
 </html>
